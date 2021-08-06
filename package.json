@@ -1,0 +1,61 @@
+{
+  "name": "exchange-rates",
+  "version": "1.0.0",
+  "description": "Displays api results from exchangerate.host",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js --open",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppak10/exchange-rates.git"
+  },
+  "author": "ppak10",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ppak10/exchange-rates/issues"
+  },
+  "homepage": "https://github.com/ppak10/exchange-rates#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.24",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/webpack": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "fetch-mock": "^9.11.0",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^4.3.8",
+    "isomorphic-fetch": "^3.0.0",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.0.1",
+    "prop-types": "^15.7.2",
+    "redux-mock-store": "^1.5.4",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
